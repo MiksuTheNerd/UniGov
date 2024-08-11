@@ -7,5 +7,6 @@ import router from './router'
 const app = createApp(App)
 
 app.use(router)
+router.push({ name: 'home' });
 
 app.mount('#app')
