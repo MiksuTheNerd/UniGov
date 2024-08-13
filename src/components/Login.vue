@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {translations} from '../translations/current.vue'
+import {translations} from '../translations/current'
 import {ref} from "vue"
 
 const props = defineProps(['loggedIn']);

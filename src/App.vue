@@ -9,12 +9,19 @@ const loggedIn=ref(false)
 
 <template>
     <div v-if="loggedIn">
-        <RouterView/>
+        <div id="appContainer">
+
+            <RouterView/>
+        </div>
         <Navbar/>
     </div>
     <Login :loggedIn="loggedIn" @updateLoggedIn="loggedIn = $event" v-else/>
 </template>
 
 <style scoped>
-
+    #appContainer {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 50px);
+    }
 </style>

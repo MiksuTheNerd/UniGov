@@ -6,11 +6,11 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <div id="navbar">
-        <span><router-link to="/home">H</router-link></span>
-        <span><router-link to="/groups">G</router-link></span>
-        <span><router-link to="/home">3</router-link></span>
-        <span><router-link to="/home">4</router-link></span>
-        <span><router-link to="/profile">S</router-link></span>
+        <router-link class="navbar-item" to="/home"><span>1</span></router-link>
+        <router-link class="navbar-item" to="/groups"><span>G</span></router-link>
+        <router-link class="navbar-item" to="/home"><span>H</span></router-link>
+        <router-link class="navbar-item" to="/home"><span>4</span></router-link>
+        <router-link class="navbar-item" to="/profile"><span>P</span></router-link>
     </div>
 </template>
 
@@ -21,22 +21,22 @@ import { RouterLink } from 'vue-router';
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         position: absolute;
         bottom: 0;
-        height: 80px;
+        height: 50px;
         width: 100%;
-        background: var(--background1);
+        background: var(--stripe3);
     }
-    span {
+    .navbar-item {
         cursor: pointer;
+        margin: auto;
         width: 50px;
         height: 50px;
         line-height: 50px;
-        color: var(--background1);
-        background: var(--background2);
-        display: inline-block;
-        margin: 15px auto;
+        color: var(--stripe1);
+        display: block;
         padding: 0;
         text-align: center;
-        border-radius: 50%;
+        text-decoration: none;
+        border: none;
     }
     
 </style>

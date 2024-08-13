@@ -1,5 +1,8 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-    --background1: red;
-    --background2: blue;
+    --background1: rgb(226, 203, 182);
+    --background2: rgb(183, 164, 107);
+    --stripe1: rgb(107, 183, 79);
+    --stripe2: rgb(255, 84, 84);
+    --stripe3: rgb(246, 226, 166);
 }

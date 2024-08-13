@@ -1,8 +1,19 @@
 {
     "loginText": "Kirjaudu sisään",
+    "logout": "Kirjaudu ulos",
     "login": "Kirjaudu",
     "username": "Käytäjätunnus",
     "password": "Salasana",
     "rememberMe": "Muista minut",
-    "forgotPassword": "Unohditko salasanasi?"
+    "forgotPassword": "Unohditko salasanasi?",
+
+    "points": "Pisteet",
+    "recyclingPoints": "Kierrätys",
+    "accessibilityPoints": "Saavutettavuus",
+    "localPoints": "Paikallisuus",
+    "volunteerPoints": "Vapaaehtoistoiminta",
+    "improvementPoints": "Kehittäminen",
+
+
+    "settings": "Asetukset"
 }
