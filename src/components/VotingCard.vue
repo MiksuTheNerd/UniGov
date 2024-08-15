@@ -62,15 +62,15 @@ let sortedVotes=props.data.votes.sort((a:VotingData,b:VotingData)=>b[1]-a[1])
     }
 
     .votes>div:nth-child(1) {
-        background: var(--stripe1);
+        background: var(--stripe1-darker);
     }
     .votes>div:nth-child(2) {
-        background: var(--stripe2);
+        background: var(--stripe2-darker);
     }
     .votes>div:nth-child(3) {
-        background: var(--stripe3);
+        background: var(--stripe3-darker);
     }
     .votes>div:nth-child(4) {
-        background: var(--stripe4);
+        background: var(--stripe4-darker);
     }
 </style>

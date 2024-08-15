@@ -31,19 +31,29 @@ let votings=reactive([
             ["Näin on", 23],
             ["Älä ny hulluja puhu", 2]
         ]
+    },
+    {
+        name:"Mikä olisi paras nimi tälle sivulle?",
+        desc:"Asia otsikossa",
+        votes: [
+            ["Yhteisöt", 3],
+            ["Ryhmät", 2],
+            ["Tiimit", 1],
+            ["Ihmiset", 0]
+        ]
     }
 ])
 </script>
 
 <template>
     <div class="ownCommunities">
-        <h2>{{ translations.ownCommunities }}</h2>
+        <h1>{{ translations.ownCommunities.toUpperCase() }}</h1>
         <div>
             <CommunityCard v-for="i in communities.length" :key="i" :data="communities[i-1]"/>
         </div>
     </div>
     <div class="ownVotings">
-        <h2>{{ translations.ownVotings }}</h2>
+        <h1>{{ translations.ownVotings.toUpperCase() }}</h1>
         <div>
             <VotingCard v-for="i in votings.length" :key="i" :data="votings[i-1]" />
         </div>
@@ -51,9 +61,11 @@ let votings=reactive([
 </template>
 
 <style>
-    h2 {
+    h1 {
         text-align: center;
         margin-top: 20px;
+        color: var(--background2);
+        font-size: min(10vw, 90px);
     }
     .ownCommunities>div, .ownVotings>div {
         height: 200px;

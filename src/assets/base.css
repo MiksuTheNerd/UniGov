@@ -1,15 +1,16 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-    --background1: rgb(102, 76, 15);
-    --background2: rgb(144, 116, 62);
-    
+    --background1: rgb(117, 92, 61);
+    --background2: rgb(213, 177, 131);
+    --background3: rgb(178, 115, 77);
+
     --stripe1: rgb(65, 119, 45);
     --stripe2: rgb(199, 24, 24);
-    --stripe3: rgb(252, 192, 99);
+    --stripe3: rgb(192, 203, 184);
     --stripe4: rgb(15, 86, 178);
-
-    --stripe1-darker: rgb(69, 110, 54);
-    --stripe2-darker: rgb(138, 32, 32);
-    --stripe3-darker: rgb(174, 117, 28);
-    --stripe4-darker: rgb(55, 93, 144);
+    
+    --stripe1-darker: rgb(121, 191, 96);
+    --stripe2-darker: rgb(214, 94, 94);
+    --stripe3-darker: rgb(202, 160, 95);
+    --stripe4-darker: rgb(103, 139, 188);
 }
