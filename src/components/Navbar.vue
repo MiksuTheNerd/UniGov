@@ -5,13 +5,13 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div id="navbar">
+    <nav id="navbar">
         <router-link class="navbar-item" to="/home"><span>1</span></router-link>
-        <router-link class="navbar-item" to="/groups"><span>G</span></router-link>
+        <router-link class="navbar-item" to="/communities"><span>C</span></router-link>
         <router-link class="navbar-item" to="/home"><span>H</span></router-link>
         <router-link class="navbar-item" to="/home"><span>4</span></router-link>
         <router-link class="navbar-item" to="/profile"><span>P</span></router-link>
-    </div>
+    </nav>
 </template>
 
 <style scoped>

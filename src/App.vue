@@ -23,5 +23,6 @@ const loggedIn=ref(false)
         position: absolute;
         width: 100%;
         height: calc(100% - 50px);
+        overflow-y: auto;
     }
 </style>

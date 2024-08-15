@@ -14,6 +14,10 @@
     "volunteerPoints": "Vapaaehtoistoiminta",
     "improvementPoints": "Kehittäminen",
 
+    "communities": "Yhteisöt",
+    "ownCommunities":"Yhteisösi",
+
+    "ownVotings": "Äänestykset",
 
     "settings": "Asetukset"
 }
