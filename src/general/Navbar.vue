@@ -1,21 +1,25 @@
 <script setup lang="ts">
+import CommunitiesView from '@/communities/CommunitiesView.vue';
+import HomeView from '@/home/HomeView.vue';
+import ProfileView from '@/profile/ProfileView.vue';
 import { ref } from 'vue'
-import { RouterLink } from 'vue-router';
+
+const props= defineProps(["state"])
 
 </script>
 
 <template>
     <nav id="navbar">
-        <router-link class="navbar-item" to="/home"><span>1</span></router-link>
-        <router-link class="navbar-item" to="/communities"><span>C</span></router-link>
-        <router-link class="navbar-item" to="/home"><span>H</span></router-link>
-        <router-link class="navbar-item" to="/home"><span>4</span></router-link>
-        <router-link class="navbar-item" to="/profile"><span>P</span></router-link>
+            <span @click="props.state.component=HomeView">1</span>
+            <span @click="props.state.component=CommunitiesView">C</span>
+            <span @click="props.state.component=HomeView">H</span>
+            <span @click="props.state.component=HomeView">4</span>
+            <span @click="props.state.component=ProfileView">P</span>
     </nav>
 </template>
 
 <style scoped>
-    @import "../assets/base.css";
+
     #navbar {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -25,7 +29,7 @@ import { RouterLink } from 'vue-router';
         width: 100%;
         background: var(--stripe3);
     }
-    .navbar-item {
+    span {
         cursor: pointer;
         margin: auto;
         width: 50px;

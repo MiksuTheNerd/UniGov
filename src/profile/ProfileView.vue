@@ -1,6 +1,6 @@
 <script setup lang="ts">
 //@ts-check
-import PointsList from '@/components/PointsList.vue';
+import PointsList from '@/profile/PointsList.vue';
 import { translations } from '@/translations/current';
 </script>
 
@@ -18,7 +18,6 @@ import { translations } from '@/translations/current';
 </template>
 
 <style scoped>
-    @import '../assets/base.css';
     button {
         width: 70px;
         height: 70px;

@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import Navbar from './components/Navbar.vue'
-import { ref } from 'vue'
-import Login from './components/Login.vue'
-const loggedIn=ref(false)
 
+import Navbar from './general/Navbar.vue'
+import { ref } from 'vue'
+import { reactive } from 'vue'
+import Login from './login/Login.vue'
+const loggedIn=ref(false)
+const state=reactive({component:0})
 </script>
 
 <template>
     <div v-if="loggedIn">
         <div id="appContainer">
-
-            <RouterView/>
+            <state.component/>
         </div>
-        <Navbar/>
+        <Navbar :state="state"/>
     </div>
     <Login :loggedIn="loggedIn" @updateLoggedIn="loggedIn = $event" v-else/>
 </template>

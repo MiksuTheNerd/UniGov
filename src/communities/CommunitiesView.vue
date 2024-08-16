@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { translations } from '@/translations/current';
-import CommunityCard from '@/components/CommunityCard.vue'
+import CommunityCard from '@/communities/CommunityCard.vue'
 import { reactive } from 'vue';
-import VotingCard from '@/components/VotingCard.vue';
+import VotingCard from '@/communities/VotingCard.vue';
 let communities=reactive([
     {
         name:"UniGov Security",
