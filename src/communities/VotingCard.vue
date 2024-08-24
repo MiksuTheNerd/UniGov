@@ -31,6 +31,7 @@ let sortedVotes=props.data.votes.sort((a:VotingData,b:VotingData)=>b[1]-a[1])
         box-sizing: border-box;
         height: 500px;
         display: inline-block;
+        font-size: 13px;
     }
     .votes>div {
         display: block;
@@ -51,7 +52,7 @@ let sortedVotes=props.data.votes.sort((a:VotingData,b:VotingData)=>b[1]-a[1])
         transform: skew(-20deg);
         background: inherit;
         top: -5px;
-        height: 30px;
+        height: 25px;
         z-index: -1;
     }
     .votes>div>span:nth-child(2) {
@@ -59,6 +60,9 @@ let sortedVotes=props.data.votes.sort((a:VotingData,b:VotingData)=>b[1]-a[1])
         right: 5px;
         text-align: right;
         
+    }
+    h2 {
+        margin: 0;
     }
 
     .votes>div:nth-child(1) {

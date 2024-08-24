@@ -6,9 +6,13 @@
 
     --stripe1: rgb(65, 119, 45);
     --stripe2: rgb(199, 24, 24);
-    --stripe3: rgb(192, 203, 184);
-    --stripe4: rgb(15, 86, 178);
+    --stripe3: rgb(255, 191, 67);
+    /* --stripe4: rgb(15, 86, 178); */
     
+    --stripe4: rgb(121, 191, 96);
+    --stripe5: rgb(214, 94, 94);
+    --stripe6: rgb(244, 192, 113);
+
     --stripe1-darker: rgb(121, 191, 96);
     --stripe2-darker: rgb(214, 94, 94);
     --stripe3-darker: rgb(202, 160, 95);
